@@ -2,6 +2,7 @@ package com.example.fragmentbackstack
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -224,10 +225,12 @@ class MainActivity : AppCompatActivity() ,FragmentManager.OnBackStackChangedList
 
         val count =  manager.backStackEntryCount
 
-        for (i in 0 downTo count-1){
+
+        for (i in count-1 downTo 0){
 
             val entry = manager.getBackStackEntryAt(i)
-            messege.text = "${messege.text}" + "" + entry.name + "\n"
+            messege.text = "${messege.text}" + "\n" + entry.name + "\n"
+
         }
 
         messege.text = "${messege.text}"+"\n"
