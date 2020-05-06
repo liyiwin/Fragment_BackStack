@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="51dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="32dp"
         android:text="Add A" />
 
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_add_A"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="49dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="16dp"
         android:text="Attach A" />
 
@@ -72,7 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_attach_A"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="27dp"
         android:text="Replace With A" />
 
@@ -92,7 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_replace_with_A"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="51dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="24dp"
         android:text="Back" />
 
@@ -108,13 +108,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="290dp"
+        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
-        android:layout_marginBottom="0dp"
-        android:layout_alignParentRight="true"
+        android:layout_marginRight="0dp"
 
-        >
+        android:layout_marginBottom="0dp">
 
         <LinearLayout
             android:id="@+id/group"
