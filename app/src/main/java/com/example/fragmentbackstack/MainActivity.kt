@@ -17,11 +17,39 @@ class MainActivity : AppCompatActivity() ,FragmentManager.OnBackStackChangedList
 
         setData ()
 
+        setActions()
+
     }
 
     fun setData (){
 
         manager = supportFragmentManager
+
+    }
+
+    fun setActions(){
+
+        button_add_A.setOnClickListener {addA()}
+
+        button_remove_A.setOnClickListener { removeA() }
+
+        button_detach_A.setOnClickListener { detachA() }
+
+        button_attach_A.setOnClickListener { attachA() }
+
+        button_add_B.setOnClickListener{addB()}
+
+        button_remove_B.setOnClickListener { removeB() }
+
+        button_pop_add_B.setOnClickListener { popaddB() }
+
+        button_replace_with_A.setOnClickListener { replacewithA() }
+
+        button_replace_with_B.setOnClickListener { replacewithB() }
+
+        button_back.setOnClickListener { back() }
+
+        manager.addOnBackStackChangedListener(this)
 
     }
 
