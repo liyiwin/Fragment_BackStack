@@ -229,7 +229,7 @@ class MainActivity : AppCompatActivity() ,FragmentManager.OnBackStackChangedList
         for (i in count-1 downTo 0){
 
             val entry = manager.getBackStackEntryAt(i)
-            messege.text = "${messege.text}" + "\n" + entry.name + "\n"
+            messege.text = "${messege.text}" + "\n" + "\n" +entry.name + "\n"
 
         }
 
