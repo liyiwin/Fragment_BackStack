@@ -5,8 +5,9 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() ,FragmentManager.OnBackStackChangedListener{
 
     lateinit var manager: FragmentManager
 
@@ -188,6 +189,22 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    override fun onBackStackChanged() {
+        messege.text = "${messege.text}"+"\n"
+
+        messege.text = "${messege.text}"+ "The current status of Back Stack"
+
+        val count =  manager.backStackEntryCount
+
+        for (i in 0 downTo count-1){
+
+            val entry = manager.getBackStackEntryAt(i)
+            messege.text = "${messege.text}" + "" + entry.name + "\n"
+        }
+
+        messege.text = "${messege.text}"+"\n"
+
+    }
 
 
 }
