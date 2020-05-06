@@ -113,22 +113,17 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
         android:layout_marginRight="0dp"
-
         android:layout_marginBottom="0dp">
 
-        <LinearLayout
+        <FrameLayout
             android:id="@+id/group"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="#ffeeee"
-            android:orientation="vertical">
-
-        </LinearLayout>
+            android:background="#ffeeee" />
 
         <ScrollView
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#eeeeff">
