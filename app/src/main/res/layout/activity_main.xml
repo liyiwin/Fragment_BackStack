@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_add_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="32dp"
+        android:text="Add A" />
+
+    <Button
+        android:id="@+id/button_remove_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="33dp"
+        android:layout_toEndOf="@+id/button_add_A"
+        android:text="remove A" />
+
+    <Button
+        android:id="@+id/button_detach_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@+id/button_remove_A"
+        android:text="Detach A" />
+
+    <Button
+        android:id="@+id/button_attach_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_add_A"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="16dp"
+        android:text="Attach A" />
+
+    <Button
+        android:id="@+id/button_add_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_remove_A"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/button_attach_A"
+        android:text="Add B" />
+
+    <Button
+        android:id="@+id/button_remove_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_detach_A"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/button_add_B"
+        android:text="Remove B" />
+
+    <Button
+        android:id="@+id/button_replace_with_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_attach_A"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="27dp"
+        android:text="Replace With A" />
+
+    <Button
+        android:id="@+id/button_replace_with_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_add_B"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="29dp"
+        android:layout_toEndOf="@+id/button_replace_with_A"
+        android:text="Replace With B" />
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_replace_with_A"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="24dp"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/button_pop_add_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_replace_with_B"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@+id/button_back"
+        android:text=" Pop Add B" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentRight="true"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/group"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#ffeeee"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#eeeeff">
+
+
+            <TextView
+                android:id="@+id/messege"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
